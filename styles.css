@@ -13,13 +13,28 @@ header, section {
 	position: fixed; /* takes item out of document flow, removes the inherited width */
 	text-align: center;
 	width: 560px; /*fix our width issue*/
+	background-color: #fff;
+}
+
+.thumb {
+	height: 70px;
 }
 
 section {
 	top: 50px;
 }
 
+main {
+	padding: 370px 18px 10px;
+}
+
 .logo {
 	width: 120px;
 	padding: 10px;
+}
+
+article {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 }
