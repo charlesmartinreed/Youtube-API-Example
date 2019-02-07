@@ -17,7 +17,6 @@ $(document).ready(function() {
 	function loadVids() {
 		//sends a request
 		$.getJSON(URL, options, function(data){
-			console.log(data);
 			var id = data.items[0].snippet.resourceId.videoId;
 			mainVid(id);
 			resultsLoop(data);
@@ -60,7 +59,8 @@ $(document).ready(function() {
 	$('main').on('click', 'article', function() {
 		//pull out the video id, stored in data key of article
 		var id = $(this).attr('data-key');
-		alert(id);
+			//pass it to mainVid
+			mainVid(id);
 	});
 
 });
