@@ -18,6 +18,11 @@ header, section {
 
 .thumb {
 	height: 70px;
+	border-radius: 4px;
+}
+
+.details {
+	padding: 8px 22px;
 }
 
 section {
@@ -34,7 +39,11 @@ main {
 }
 
 article {
+	padding: 8px 12px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }

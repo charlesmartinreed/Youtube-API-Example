@@ -8,3 +8,17 @@
 h4 {
 	@include font-base;
 }
+
+p {
+	@include font-base;
+	color: grey;
+	font-size: 0.7rem;
+}
+
+article {
+	//setting an initial border prevents the resizing that otherwise occurs during our hover
+	border: 2px solid white;
+	&:hover {
+		border: 2px solid #ff9999;
+	}
+}
