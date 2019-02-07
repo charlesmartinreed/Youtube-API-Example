@@ -4,7 +4,7 @@ body {
 
 .container {
 	width: 560px;
-	height: 100vh; /* 100% of the visible height*/
+	min-height: 100vh; /* 100% of the visible height*/
 	background-color: #fff;
 	margin: 0 auto;
 }
@@ -40,6 +40,7 @@ main {
 
 article {
 	padding: 8px 12px;
+	margin: 0 auto;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
