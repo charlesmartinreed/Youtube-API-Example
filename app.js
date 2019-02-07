@@ -47,7 +47,7 @@ $(document).ready(function() {
 					<img src="${thumb}" alt="" class="thumb">
 					<div class="details">
 						<h4>${title}</h4>
-						<p>${description}</p>
+						<p>${description + "..."}</p>
 					</div>
 
 				</article>

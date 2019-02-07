@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+:root {
+	font-family: 'Roboto', sans-serif;
+}
+
 body {
 	background-color: #eee;
 }
@@ -22,7 +28,7 @@ header, section {
 }
 
 .details {
-	padding: 8px 22px;
+	padding: 8px;
 }
 
 section {
