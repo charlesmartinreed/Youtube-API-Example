@@ -38,20 +38,29 @@ $(document).ready(function() {
 			var thumb = item.snippet.thumbnails.medium.url;
 			var title = item.snippet.title;
 			var description = item.snippet.description.substring(0,100); //first 100 characters
+			var vid = item.snippet.resourceId.videoId;
 
 			//using .append, not .html, because we want to reflect each data item in the loop on the DOM
+			//by using the data-key, we're tying it to the video ID
 			$('main').append(`
-				<article>
+				<article class="item" data-key="${vid}">
+
 					<img src="${thumb}" alt="" class="thumb">
 					<div class="details">
 						<h4>${title}</h4>
 						<p>${description}</p>
 					</div>
+
 				</article>
-				`)
-		})
-
-
-
+				`);
+		});
 	}
+
+	//dig down into main and find article
+	$('main').on('click', 'article', function() {
+		//pull out the video id, stored in data key of article
+		var id = $(this).attr('data-key');
+		alert(id);
+	});
+
 });
